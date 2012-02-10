@@ -1,0 +1,59 @@
+NAT64 - Network Address Translator IPv6 to IPv4
+
+Copyright (C) 2010 Viagenie Inc. http://www.viagenie.ca
+
+Authors:
+     Jean-Philippe Dionne <jean-philippe.dionne@viagenie.ca>
+     Simon Perreault <simon.perreault@viagenie.ca>
+     Marc Blanchet <marc.blanchet@viagenie.ca>
+
+NAT64 is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+NAT64 is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with NAT64.  If not, see <http://www.gnu.org/licenses/>.
+
+==============
+NAT64 20101110
+==============
+
+This code implements NAT64 as a linux kernel module.  It currently
+supports TCP, UDP and ICMP traffic.
+
+This implementation follows recommandations from the IETF draft: "NAT64: Network 
+Address and Protocol Translation from IPv6 Clients to IPv4 Servers" 
+(http://www.ietf.org/id/draft-ietf-behave-v6v4-xlate-stateful-07.txt )
+
+For further information, please visit the project page at:
+http://ecdysis.viagenie.ca
+
+------------
+Requirements
+------------
+
+- Linux kernel version >= 2.6.31
+
+-----------
+Compilation
+-----------
+
+$ make
+
+------------
+Installation
+------------
+
+# make install
+
+-------------
+Configuration 
+-------------
+
+See the ./nat64-config.sh script. Edit to fit your needs.
+

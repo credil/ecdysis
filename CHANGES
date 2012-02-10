@@ -1,0 +1,9 @@
+--------------
+Changes in 0.2
+--------------
+
+- nf_nat64 compiles works on 2.6.31 to 2.6.33 (Tested on Fedora 12)
+- Remove dependency on the accept_local sysctl
+- Improved configuration script
+- Fix an important bug caused by an uninitialized value that made packets to be silently dropped
+
